@@ -7,4 +7,4 @@ I'm **Junior Software Developer** who is passionate about web technologies such 
 - ⚡ Fun fact: May the code be with you 🦸‍♂️.
 
 ## Get in touch around the web 🌍
--  Look at my professional career: [LinkedIn](www.linkedin.com/in/ricardojcv) 📝
+-  Look at my professional career: [LinkedIn](https://www.linkedin.com/in/ricardojcv) 📝
