@@ -2,6 +2,8 @@
 
 ### Senior Full-Stack Developer · Java & Spring Boot · Angular · Vue · React
 
+[🌐 View my portfolio](https://rickyjcv.github.io/RickyJCV/)
+
 I'm a **Full-Stack Developer based in Spain**, with **5+ years of professional experience** building, evolving and maintaining enterprise applications.
 
 My main focus is backend development with **Java and Spring Boot**, while also working across modern frontend stacks such as **Angular, Vue.js and React**. I work throughout the full software lifecycle: technical analysis, development, code review, integrations, migrations, testing, deployments and production troubleshooting.
@@ -42,6 +44,7 @@ I enjoy working on projects where I can understand the problem end-to-end, desig
 
 ## 📫 Get in touch
 
+- **Portfolio:** [rickyjcv.github.io/RickyJCV](https://rickyjcv.github.io/RickyJCV/)
 - **LinkedIn:** [linkedin.com/in/ricardojcv](https://www.linkedin.com/in/ricardojcv)
 - **Email:** [a.ricardocabrera@gmail.com](mailto:a.ricardocabrera@gmail.com)
 
