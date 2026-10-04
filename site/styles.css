@@ -263,6 +263,25 @@ footer{
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
 .reveal.visible{opacity:1;transform:none}
 
+
+/* Professional polish */
+::selection{background:var(--accent);color:#fff}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.topbar{box-shadow:0 14px 38px rgba(0,8,20,.14)}
+.nav a{padding:8px 10px;border-radius:10px}
+.nav a::after{display:none}
+.nav a:hover,.nav a.active{background:rgba(87,166,255,.10);color:var(--text)}
+.availability{background:rgba(13,29,49,.72)}
+.status-dot{background:var(--accent-3)}
+.hero-description{line-height:1.75}
+.hero-metrics article{padding:19px 18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.card,.project-card{backdrop-filter:blur(12px)}
+.capability,.stack-card,.education-card{transition:transform .2s ease,border-color .2s ease}
+.capability:hover,.stack-card:hover,.education-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.project-card{overflow:hidden}
+.client-chip{background:rgba(87,166,255,.08)}
+.contact-panel{border-color:rgba(87,166,255,.22)}
+
 @media(max-width:920px){
   .nav{
     position:fixed;top:82px;left:16px;right:16px;display:none;flex-direction:column;align-items:stretch;gap:4px;
