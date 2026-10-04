@@ -16,19 +16,19 @@
   --max:1180px;
 }
 html[data-theme="light"]{
-  --bg:#f4f7fb;
-  --bg-elev:#eef3f8;
-  --surface:rgba(255,255,255,.82);
+  --bg:#f5f8fc;
+  --bg-elev:#edf3f9;
+  --surface:rgba(255,255,255,.86);
   --surface-solid:#fff;
-  --surface-soft:#f8fbfd;
-  --text:#142235;
-  --muted:#5d6f82;
-  --muted-2:#7d8b99;
-  --line:rgba(20,34,53,.1);
-  --accent:#09916d;
-  --accent-2:#356fd8;
-  --accent-3:#7354c9;
-  --shadow:0 28px 70px rgba(31,55,83,.12);
+  --surface-soft:#f7faff;
+  --text:#102238;
+  --muted:#5c6f86;
+  --muted-2:#7a8b9f;
+  --line:rgba(30,67,110,.12);
+  --accent:#2563eb;
+  --accent-2:#4f46e5;
+  --accent-3:#0f9d8a;
+  --shadow:0 24px 70px rgba(42,70,105,.13);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -86,8 +86,8 @@ img{max-width:100%}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em}
 .brand-mark{
   display:grid;place-items:center;width:38px;height:38px;border-radius:12px;
-  background:linear-gradient(135deg,var(--accent),#a9ffe1);
-  color:#06121d;font-size:.8rem;font-weight:900;box-shadow:0 8px 28px color-mix(in srgb,var(--accent) 20%,transparent)
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;font-size:.8rem;font-weight:900;box-shadow:0 8px 28px color-mix(in srgb,var(--accent) 20%,transparent)
 }
 .nav{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.9rem}
 .nav a{position:relative;padding:8px 0;transition:color .2s ease}
@@ -130,7 +130,7 @@ h1{
 }
 .hero-name{
   display:block;
-  background:linear-gradient(100deg,var(--accent),var(--accent-2) 60%,var(--accent-3));
+  background:linear-gradient(100deg,#78b9ff,var(--accent) 35%,var(--accent-2) 72%,var(--accent-3));
   -webkit-background-clip:text;background-clip:text;color:transparent
 }
 .hero-role{font-size:clamp(1.08rem,2vw,1.4rem);font-weight:800;letter-spacing:-.03em;margin-bottom:14px}
@@ -144,7 +144,7 @@ h1{
 }
 .button:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
 .button.primary{
-  color:#07111c;border-color:transparent;background:linear-gradient(135deg,var(--accent),#b3ffe7);
+  color:#fff;border-color:transparent;background:linear-gradient(135deg,var(--accent),var(--accent-2));
   box-shadow:0 12px 36px color-mix(in srgb,var(--accent) 18%,transparent)
 }
 .button.secondary{background:var(--surface)}
