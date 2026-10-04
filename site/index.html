@@ -1,277 +1,397 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ricardo Jesús Cabrera Valero — Senior Full-Stack Developer focused on Java, Spring Boot, Angular, Vue and React." />
-  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Portfolio profesional de Ricardo Jesús Cabrera Valero, Senior Full-Stack Developer especializado en Java, Spring Boot, Angular, Vue y React." />
+  <meta name="theme-color" content="#08111f" />
   <meta property="og:title" content="Ricardo Cabrera · Senior Full-Stack Developer" />
-  <meta property="og:description" content="Portfolio, experience, technical stack and selected projects." />
+  <meta property="og:description" content="Experiencia, stack y proyectos de un desarrollador Full-Stack especializado en Java y Spring Boot." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/RickyJCV.png?size=512" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Ricardo Cabrera · Senior Full-Stack Developer</title>
+  <link rel="icon" href="https://github.com/RickyJCV.png?size=64" />
   <link rel="stylesheet" href="./styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ricardo Jesús Cabrera Valero",
+    "jobTitle":"Senior Full-Stack Developer",
+    "url":"https://rickyjcv.github.io/RickyJCV/",
+    "sameAs":["https://github.com/RickyJCV","https://www.linkedin.com/in/ricardojcv"],
+    "knowsAbout":["Java","Spring Boot","Angular","Vue.js","React","SQL Server","Oracle","REST APIs","Software Architecture"]
+  }
+  </script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
 
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Go to top">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
       <span class="brand-mark">RC</span>
-      <span>Ricardo Cabrera</span>
+      <span class="brand-text">Ricardo Cabrera</span>
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+      <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
       <a href="#stack" data-i18n="nav.stack">Stack</a>
-      <a href="#projects" data-i18n="nav.projects">Projects</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
 
     <div class="header-actions">
-      <button class="icon-button" id="languageToggle" type="button" aria-label="Change language">ES</button>
-      <button class="icon-button" id="themeToggle" type="button" aria-label="Change color theme">☀</button>
-      <button class="menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="utility-button" id="languageToggle" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="utility-button" id="themeToggle" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="utility-button menu-button" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.available">Senior Full-Stack Developer · Spain</span></div>
+    <section class="hero section" id="inicio">
+      <div class="hero-main">
+        <div class="availability">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.badge">Senior Full-Stack Developer · España</span>
+        </div>
+
         <h1>
-          <span data-i18n="hero.hello">Hi, I'm</span>
-          <span class="gradient-text">Ricardo Cabrera.</span>
+          <span data-i18n="hero.hello">Hola, soy</span>
+          <span class="hero-name">Ricardo Cabrera.</span>
         </h1>
-        <p class="hero-role">Java & Spring Boot · Angular · Vue · React</p>
-        <p class="hero-lead" data-i18n="hero.lead">
-          I build and evolve enterprise applications end to end: technical analysis, backend and frontend development,
-          integrations, migrations, code review, deployments and production troubleshooting.
+
+        <p class="hero-role">
+          Java & Spring Boot <span>·</span> Angular <span>·</span> Vue <span>·</span> React
+        </p>
+
+        <p class="hero-description" data-i18n="hero.description">
+          Desarrollo software empresarial de principio a fin: análisis técnico, backend y frontend,
+          integraciones, migraciones, revisión de código, despliegues y resolución de incidencias.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#experience" data-i18n="hero.ctaExperience">View experience</a>
+          <a class="button primary" href="#experiencia" data-i18n="hero.cta">Ver experiencia</a>
           <a class="button secondary" href="https://github.com/RickyJCV" target="_blank" rel="noopener">GitHub ↗</a>
-          <button class="button ghost" id="printCv" type="button" data-i18n="hero.print">Print / Save CV</button>
+          <a class="button secondary" href="https://www.linkedin.com/in/ricardojcv" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
 
-        <div class="metrics" aria-label="Professional summary">
-          <div class="metric"><strong>5+</strong><span data-i18n="metrics.years">years of experience</span></div>
-          <div class="metric"><strong>Full-Stack</strong><span data-i18n="metrics.scope">end-to-end delivery</span></div>
-          <div class="metric"><strong>Java</strong><span>Spring Boot · REST · JPA</span></div>
+        <div class="hero-metrics">
+          <article>
+            <strong>5+</strong>
+            <span data-i18n="metrics.years">años de experiencia</span>
+          </article>
+          <article>
+            <strong>Full-Stack</strong>
+            <span data-i18n="metrics.scope">visión end-to-end</span>
+          </article>
+          <article>
+            <strong>Java</strong>
+            <span>Spring Boot · REST · JPA</span>
+          </article>
         </div>
       </div>
 
-      <aside class="profile-card" aria-label="Profile card">
-        <div class="profile-frame">
-          <img src="https://github.com/RickyJCV.png?size=360" alt="Ricardo Cabrera" class="profile-image" />
-          <div class="profile-ring"></div>
+      <aside class="hero-card" aria-label="Resumen profesional">
+        <div class="portrait-shell">
+          <img src="https://github.com/RickyJCV.png?size=460" alt="Ricardo Cabrera" class="portrait" />
+          <div class="portrait-border"></div>
         </div>
-        <div class="profile-card-copy">
-          <span class="kicker" data-i18n="profile.focus">PRIMARY FOCUS</span>
+
+        <div class="hero-card-body">
+          <p class="eyebrow" data-i18n="heroCard.focus">FOCO PRINCIPAL</p>
           <h2>Backend + Full-Stack</h2>
-          <p data-i18n="profile.copy">Enterprise software, modernization and reliable delivery across the full lifecycle.</p>
-          <div class="mini-tags">
-            <span>Java</span><span>Spring Boot</span><span>Angular</span><span>Vue</span><span>SQL</span>
+          <p data-i18n="heroCard.copy">
+            Software empresarial, modernización de aplicaciones y entrega fiable en todo el ciclo de vida.
+          </p>
+
+          <div class="skill-pills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Angular</span>
+            <span>Vue.js</span>
+            <span>SQL</span>
           </div>
         </div>
       </aside>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <span class="section-number">01</span>
+    <section class="section" id="perfil">
+      <div class="section-header">
+        <span class="section-index">01</span>
         <div>
-          <p class="kicker" data-i18n="about.kicker">PROFILE</p>
-          <h2 data-i18n="about.title">Software engineering with a practical, end-to-end mindset.</h2>
+          <p class="eyebrow" data-i18n="profile.eyebrow">PERFIL</p>
+          <h2 data-i18n="profile.title">Ingeniería de software con una visión práctica y end-to-end.</h2>
         </div>
       </div>
 
-      <div class="about-grid">
-        <div class="prose-card">
-          <p data-i18n="about.p1">
-            I'm a Full-Stack Developer with more than five years of professional experience working on enterprise web and mobile solutions
-            across public administration, healthcare, transport and utilities.
+      <div class="profile-layout">
+        <article class="profile-copy card">
+          <p data-i18n="profile.p1">
+            Soy desarrollador Full-Stack con más de cinco años de experiencia profesional en soluciones web y móviles
+            para administración pública, salud, transporte y servicios.
           </p>
-          <p data-i18n="about.p2">
-            My strongest area is backend development with Java and Spring Boot, while I also work comfortably on modern frontends with Angular,
-            Vue and React. I regularly take work from technical analysis through implementation, testing, deployment and incident resolution.
+          <p data-i18n="profile.p2">
+            Mi especialidad es el backend con Java y Spring Boot, aunque trabajo habitualmente con Angular, Vue y React.
+            Suelo llevar las tareas desde el análisis técnico hasta la implementación, pruebas, despliegue y soporte en producción.
           </p>
-        </div>
-        <div class="capabilities">
-          <article><span>01</span><h3 data-i18n="cap.analysis">Technical analysis</h3><p data-i18n="cap.analysisCopy">Requirements, impact analysis, solution design and task breakdown.</p></article>
-          <article><span>02</span><h3 data-i18n="cap.delivery">Full-stack delivery</h3><p data-i18n="cap.deliveryCopy">Backend, frontend, APIs, persistence, integrations and testing.</p></article>
-          <article><span>03</span><h3 data-i18n="cap.modernization">Modernization</h3><p data-i18n="cap.modernizationCopy">Java upgrades, dependency migrations, legacy refactoring and application-server deployments.</p></article>
-          <article><span>04</span><h3 data-i18n="cap.operations">Production mindset</h3><p data-i18n="cap.operationsCopy">Code review, PRE/PRO deployments, logs, debugging and incident diagnosis.</p></article>
+          <div class="profile-note">
+            <span class="profile-note-icon">⌁</span>
+            <p data-i18n="profile.note">
+              Me centro en soluciones mantenibles, integraciones robustas y cambios que puedan desplegarse con seguridad.
+            </p>
+          </div>
+        </article>
+
+        <div class="capability-grid">
+          <article class="capability card">
+            <span>01</span>
+            <h3 data-i18n="cap.analysis">Análisis técnico</h3>
+            <p data-i18n="cap.analysisCopy">Requisitos, análisis de impacto, diseño de solución y desglose de tareas.</p>
+          </article>
+          <article class="capability card">
+            <span>02</span>
+            <h3 data-i18n="cap.delivery">Desarrollo Full-Stack</h3>
+            <p data-i18n="cap.deliveryCopy">Backend, frontend, APIs, persistencia, integraciones y testing.</p>
+          </article>
+          <article class="capability card">
+            <span>03</span>
+            <h3 data-i18n="cap.modernization">Modernización</h3>
+            <p data-i18n="cap.modernizationCopy">Migraciones de Java, dependencias, legacy y servidores de aplicaciones.</p>
+          </article>
+          <article class="capability card">
+            <span>04</span>
+            <h3 data-i18n="cap.production">Producción</h3>
+            <p data-i18n="cap.productionCopy">Revisión de código, despliegues PRE/PRO, logs y diagnóstico de incidencias.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <span class="section-number">02</span>
+    <section class="section" id="experiencia">
+      <div class="section-header">
+        <span class="section-index">02</span>
         <div>
-          <p class="kicker" data-i18n="experience.kicker">EXPERIENCE</p>
-          <h2 data-i18n="experience.title">Professional journey</h2>
+          <p class="eyebrow" data-i18n="experience.eyebrow">EXPERIENCIA</p>
+          <h2 data-i18n="experience.title">Trayectoria profesional.</h2>
         </div>
       </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-meta"><span>2023 — <span data-i18n="common.present">Present</span></span><span class="company">Getronics</span></div>
-          <div class="timeline-content">
-            <h3>Senior Full-Stack Developer</h3>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-side">
+            <span class="date">MAY 2023 — <span data-i18n="common.present">ACTUALIDAD</span></span>
+            <h3>Getronics</h3>
+            <span class="role">Senior Full-Stack Developer</span>
+          </div>
+          <div class="experience-body">
+            <div class="experience-heading">
+              <span class="client-chip">CNMC · Ministerio de Trabajo</span>
+            </div>
             <p data-i18n="experience.getronics">
-              Technical analysis and development of enterprise platforms for public-sector clients. Current work combines Java/Spring Boot backends,
-              Vue frontends, SQL Server, integrations and server deployments. Responsibilities include code reviews, application migrations,
-              PRE/PRO deployments and production incident diagnosis.
+              Análisis técnico y desarrollo de plataformas empresariales para organismos públicos. Actualmente trabajo con
+              backend Java/Spring Boot, frontend Vue, SQL Server, integraciones y despliegues en servidores.
             </p>
-            <div class="tags"><span>Java</span><span>Spring Boot</span><span>Vue</span><span>Angular</span><span>SQL Server</span><span>Oracle</span><span>Maven</span><span>WildFly</span></div>
-            <details>
-              <summary data-i18n="experience.details">Selected responsibilities</summary>
-              <ul>
-                <li data-i18n="experience.getronics1">End-to-end development of evolutions and new functionality.</li>
-                <li data-i18n="experience.getronics2">REST/SOAP integrations and communication with external systems.</li>
-                <li data-i18n="experience.getronics3">Java and dependency migrations, including modernization of legacy services.</li>
-                <li data-i18n="experience.getronics4">Code review, database work, deployments and incident troubleshooting across environments.</li>
-              </ul>
-            </details>
+            <ul>
+              <li data-i18n="experience.getronics1">Desarrollo de evolutivos y nuevas funcionalidades de principio a fin.</li>
+              <li data-i18n="experience.getronics2">Integraciones REST/SOAP y comunicación con sistemas externos.</li>
+              <li data-i18n="experience.getronics3">Migraciones de Java, dependencias y modernización de servicios legacy.</li>
+              <li data-i18n="experience.getronics4">Revisión de código, BBDD, despliegues PRE/PRO y diagnóstico de incidencias.</li>
+            </ul>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>Vue</span><span>Angular</span><span>SQL Server</span><span>Oracle</span><span>Maven</span><span>WildFly</span>
+            </div>
           </div>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-meta"><span>2022 — 2023</span><span class="company">Ezentis</span></div>
-          <div class="timeline-content">
-            <h3>Full-Stack Developer</h3>
+        <article class="experience-item">
+          <div class="experience-side">
+            <span class="date">JUL 2022 — MAY 2023</span>
+            <h3>Ezentis</h3>
+            <span class="role">Full-Stack Developer</span>
+          </div>
+          <div class="experience-body">
+            <div class="experience-heading">
+              <span class="client-chip">Ministerio de Trabajo</span>
+            </div>
             <p data-i18n="experience.ezentis">
-              Technical analysis and development of application evolutions for Spain's Ministry of Labour, working on the same platform later continued at Getronics.
-              Full-stack work across Angular, Java/Spring Boot, Oracle, REST/SOAP services and enterprise integration components.
+              Análisis técnico y desarrollo de evolutivos sobre la misma plataforma que posteriormente continué desarrollando en Getronics,
+              con trabajo Full-Stack en Angular, Java/Spring Boot, Oracle y servicios REST/SOAP.
             </p>
-            <div class="tags"><span>Java 11</span><span>Spring Boot</span><span>Angular</span><span>Oracle</span><span>REST</span><span>SOAP</span></div>
+            <div class="tags">
+              <span>Java 11</span><span>Spring Boot</span><span>Angular</span><span>Oracle</span><span>REST</span><span>SOAP</span>
+            </div>
           </div>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-meta"><span>2020 — 2022</span><span class="company">Fujitsu Spain</span></div>
-          <div class="timeline-content">
-            <h3>Software Developer</h3>
-            <p data-i18n="experience.fujitsu">
-              Full-stack development across healthcare, transport and utilities. Worked on Xemio, a breast-cancer support platform with web and mobile applications;
-              T-Mobilitat maintenance; and new functionality plus maintenance for EMASA.
-            </p>
-            <div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>React Native</span><span>Angular</span><span>JPA</span><span>SQL</span></div>
+        <article class="experience-item">
+          <div class="experience-side">
+            <span class="date">MAY 2020 — JUN 2022</span>
+            <h3>Fujitsu Spain</h3>
+            <span class="role">Software Developer</span>
+          </div>
+          <div class="experience-body">
+            <div class="project-lines">
+              <div>
+                <strong>Xemio</strong>
+                <p data-i18n="experience.xemio">Aplicación de apoyo para cáncer de mama con web y app móvil. Desarrollo Full-Stack del producto junto al equipo.</p>
+              </div>
+              <div>
+                <strong>T-Mobilitat</strong>
+                <p data-i18n="experience.tmobilitat">Mantenimiento y evolución de plataforma de movilidad.</p>
+              </div>
+              <div>
+                <strong>EMASA</strong>
+                <p data-i18n="experience.emasa">Desarrollo de nuevas funcionalidades y mantenimiento de aplicaciones.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>React Native</span><span>Angular</span><span>JPA</span><span>SQL</span>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section" id="stack">
-      <div class="section-heading">
-        <span class="section-number">03</span>
+      <div class="section-header">
+        <span class="section-index">03</span>
         <div>
-          <p class="kicker" data-i18n="stack.kicker">TECH STACK</p>
-          <h2 data-i18n="stack.title">Tools I use to turn requirements into working software.</h2>
+          <p class="eyebrow" data-i18n="stack.eyebrow">STACK TÉCNICO</p>
+          <h2 data-i18n="stack.title">Tecnologías que utilizo para convertir requisitos en software funcional.</h2>
         </div>
       </div>
 
       <div class="stack-grid">
-        <article class="stack-card featured">
-          <div class="stack-icon">01</div>
+        <article class="stack-card card accent-card">
+          <div class="stack-number">01</div>
           <h3>Backend</h3>
           <p>Java · Spring Boot · Spring MVC · Spring Security · JPA/Hibernate · REST APIs · SOAP · WS-Security</p>
         </article>
-        <article class="stack-card">
-          <div class="stack-icon">02</div>
+        <article class="stack-card card">
+          <div class="stack-number">02</div>
           <h3>Frontend</h3>
           <p>Angular · Vue.js · React · React Native · TypeScript · JavaScript · HTML5 · CSS3</p>
         </article>
-        <article class="stack-card">
-          <div class="stack-icon">03</div>
+        <article class="stack-card card">
+          <div class="stack-number">03</div>
           <h3>Data & Integration</h3>
-          <p>SQL Server · Oracle · MyBatis · RabbitMQ · Elasticsearch · external system integrations</p>
+          <p>SQL Server · Oracle · MyBatis · RabbitMQ · Elasticsearch · Integraciones con sistemas externos</p>
         </article>
-        <article class="stack-card">
-          <div class="stack-icon">04</div>
+        <article class="stack-card card">
+          <div class="stack-number">04</div>
           <h3>Engineering</h3>
           <p>Git · Maven · Docker · Jenkins · JBoss/WildFly · JUnit · IntelliJ IDEA · VS Code · Scrum / Agile</p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <span class="section-number">04</span>
+    <section class="section" id="proyectos">
+      <div class="section-header">
+        <span class="section-index">04</span>
         <div>
-          <p class="kicker" data-i18n="projects.kicker">SELECTED GITHUB PROJECTS</p>
-          <h2 data-i18n="projects.title">Public code that shows how I work.</h2>
+          <p class="eyebrow" data-i18n="projects.eyebrow">PROYECTOS EN GITHUB</p>
+          <h2 data-i18n="projects.title">Código público que muestra cómo trabajo.</h2>
         </div>
       </div>
 
-      <div class="project-grid">
-        <a class="project-card project-main" href="https://github.com/RickyJCV/microservicios-java-hex" target="_blank" rel="noopener">
-          <div class="project-top"><span class="project-index">01</span><span class="project-arrow">↗</span></div>
-          <h3>Java Microservices · Hexagonal Architecture</h3>
-          <p data-i18n="projects.micro">
-            Two Java 21 / Spring Boot microservices built around ports and adapters, reactive APIs, RabbitMQ messaging and Elasticsearch.
-          </p>
-          <div class="tags"><span>Java 21</span><span>Spring Boot 3</span><span>WebFlux</span><span>RabbitMQ</span><span>Elasticsearch</span><span>Docker</span></div>
+      <div class="projects-grid">
+        <a class="project-card project-featured" href="https://github.com/RickyJCV/microservicios-java-hex" target="_blank" rel="noopener">
+          <div class="project-topline">
+            <span class="project-number">01</span>
+            <span class="project-link">GitHub ↗</span>
+          </div>
+          <div class="project-content">
+            <p class="project-label">BACKEND · ARCHITECTURE</p>
+            <h3>Microservicios Java con arquitectura hexagonal</h3>
+            <p data-i18n="projects.micro">
+              Dos microservicios con Java 21 y Spring Boot, arquitectura de puertos y adaptadores, APIs reactivas,
+              RabbitMQ, Elasticsearch, Docker y pruebas.
+            </p>
+          </div>
+          <div class="tags">
+            <span>Java 21</span><span>Spring Boot 3</span><span>WebFlux</span><span>RabbitMQ</span><span>Elasticsearch</span><span>Docker</span>
+          </div>
         </a>
 
-        <a class="project-card" href="https://github.com/RickyJCV/proyecto-precios-java-hexagonal" target="_blank" rel="noopener">
-          <div class="project-top"><span class="project-index">02</span><span class="project-arrow">↗</span></div>
+        <a class="project-card card" href="https://github.com/RickyJCV/proyecto-precios-java-hexagonal" target="_blank" rel="noopener">
+          <div class="project-topline"><span class="project-number">02</span><span class="project-link">↗</span></div>
+          <p class="project-label">JAVA · CLEAN ARCHITECTURE</p>
           <h3>Pricing Service</h3>
-          <p data-i18n="projects.pricing">REST pricing service with clean hexagonal boundaries, JPA persistence and automated tests.</p>
+          <p data-i18n="projects.pricing">Servicio REST de precios con arquitectura hexagonal, persistencia JPA y pruebas automatizadas.</p>
           <div class="tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>H2</span><span>JUnit</span></div>
         </a>
 
-        <a class="project-card" href="https://github.com/RickyJCV/API-Superheroes" target="_blank" rel="noopener">
-          <div class="project-top"><span class="project-index">03</span><span class="project-arrow">↗</span></div>
-          <h3>Superheroes REST API</h3>
-          <p data-i18n="projects.api">A compact Java 11 / Spring Boot REST API project documented with Swagger.</p>
+        <a class="project-card card" href="https://github.com/RickyJCV/API-Superheroes" target="_blank" rel="noopener">
+          <div class="project-topline"><span class="project-number">03</span><span class="project-link">↗</span></div>
+          <p class="project-label">REST API</p>
+          <h3>Superheroes API</h3>
+          <p data-i18n="projects.api">API REST con Java 11 y Spring Boot, construida con Maven y documentada con Swagger.</p>
           <div class="tags"><span>Java 11</span><span>Spring Boot</span><span>Maven</span><span>Swagger</span></div>
         </a>
 
-        <a class="project-card" href="https://github.com/RickyJCV/vue-pokemon-game" target="_blank" rel="noopener">
-          <div class="project-top"><span class="project-index">04</span><span class="project-arrow">↗</span></div>
+        <a class="project-card card" href="https://github.com/RickyJCV/vue-pokemon-game" target="_blank" rel="noopener">
+          <div class="project-topline"><span class="project-number">04</span><span class="project-link">↗</span></div>
+          <p class="project-label">FRONTEND</p>
           <h3>Vue Pokémon Game</h3>
-          <p data-i18n="projects.vue">Frontend project built with Vue 3, TypeScript and Vite, including unit-testing tooling.</p>
+          <p data-i18n="projects.vue">Proyecto frontend con Vue 3, TypeScript y Vite, incluyendo tooling de testing unitario.</p>
           <div class="tags"><span>Vue 3</span><span>TypeScript</span><span>Vite</span><span>Vitest</span></div>
         </a>
 
-        <a class="project-card" href="https://github.com/RickyJCV/Sunset-Shop-Online" target="_blank" rel="noopener">
-          <div class="project-top"><span class="project-index">05</span><span class="project-arrow">↗</span></div>
+        <a class="project-card card" href="https://github.com/RickyJCV/Sunset-Shop-Online" target="_blank" rel="noopener">
+          <div class="project-topline"><span class="project-number">05</span><span class="project-link">↗</span></div>
+          <p class="project-label">RESPONSIVE UI</p>
           <h3>Sunset Shop Online</h3>
-          <p data-i18n="projects.shop">Responsive storefront interface with product, contact, sign-in and registration experiences.</p>
-          <div class="tags"><span>Responsive UI</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <p data-i18n="projects.shop">Interfaz responsive de tienda con catálogo, contacto, autenticación y registro.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
         </a>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <div class="section-heading">
-        <span class="section-number">05</span>
+    <section class="section" id="formacion">
+      <div class="section-header">
+        <span class="section-index">05</span>
         <div>
-          <p class="kicker" data-i18n="education.kicker">EDUCATION</p>
-          <h2 data-i18n="education.title">Technical foundation and continuous learning.</h2>
+          <p class="eyebrow" data-i18n="education.eyebrow">FORMACIÓN</p>
+          <h2 data-i18n="education.title">Base técnica y aprendizaje continuo.</h2>
         </div>
       </div>
+
       <div class="education-grid">
-        <article><span class="education-type" data-i18n="education.official">OFFICIAL EDUCATION</span><h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3><p>ADA ITS</p></article>
-        <article><span class="education-type" data-i18n="education.certification">CERTIFICATION</span><h3>Curso Universitario de Programación en Java</h3><p>Universidad Antonio de Nebrija</p></article>
-        <article><span class="education-type" data-i18n="education.certification">CERTIFICATION</span><h3>Scrum Foundation Professional Certificate</h3><p>CertiProf</p></article>
+        <article class="education-card card">
+          <span class="education-label" data-i18n="education.official">FORMACIÓN OFICIAL</span>
+          <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+          <p>ADA ITS</p>
+        </article>
+        <article class="education-card card">
+          <span class="education-label" data-i18n="education.cert">CERTIFICACIÓN</span>
+          <h3>Curso Universitario de Programación en Java</h3>
+          <p>Universidad Antonio de Nebrija</p>
+        </article>
+        <article class="education-card card">
+          <span class="education-label" data-i18n="education.cert">CERTIFICACIÓN</span>
+          <h3>Scrum Foundation Professional Certificate</h3>
+          <p>CertiProf</p>
+        </article>
       </div>
     </section>
 
-    <section class="contact-section section" id="contact">
-      <div class="contact-card">
-        <p class="kicker" data-i18n="contact.kicker">LET'S CONNECT</p>
-        <h2 data-i18n="contact.title">Want to talk about software, architecture or a new opportunity?</h2>
-        <p data-i18n="contact.copy">You can reach me directly by email or through LinkedIn and GitHub.</p>
+    <section class="section contact-section" id="contacto">
+      <div class="contact-panel">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">CONTACTO</p>
+          <h2 data-i18n="contact.title">¿Hablamos de software, arquitectura o una nueva oportunidad?</h2>
+          <p data-i18n="contact.copy">Puedes contactar conmigo por email, LinkedIn o GitHub.</p>
+        </div>
+
         <div class="contact-actions">
-          <a class="button primary" href="mailto:a.ricardocabrera@gmail.com">a.ricardocabrera@gmail.com</a>
+          <a class="button primary" href="mailto:a.ricardocabrera@gmail.com">Enviar email</a>
           <a class="button secondary" href="https://www.linkedin.com/in/ricardojcv" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="button secondary" href="https://github.com/RickyJCV" target="_blank" rel="noopener">GitHub ↗</a>
+          <button class="button secondary" id="printCv" type="button" data-i18n="contact.print">Guardar como PDF</button>
         </div>
       </div>
     </section>
@@ -279,7 +399,7 @@
 
   <footer>
     <span>© <span id="year"></span> Ricardo Jesús Cabrera Valero</span>
-    <span data-i18n="footer.note">Built as a lightweight portfolio for GitHub Pages.</span>
+    <span data-i18n="footer.text">Senior Full-Stack Developer · España</span>
   </footer>
 
   <script src="./app.js"></script>
